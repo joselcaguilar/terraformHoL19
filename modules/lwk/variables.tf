@@ -14,7 +14,7 @@ variable "location" {
   default     = ""
 }
 
-variable "lwk_sku" {
+variable "sku" {
   type        = string
   description = "(Required) Specifies the Sku of the Log Analytics Workspace. Possible value PerGB2018"
 

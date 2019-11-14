@@ -31,4 +31,6 @@ resource "azurerm_key_vault" "kvt" {
     environment = data.azurerm_resource_group.kvt_rg.tags["environment"]
     channel     = var.channel
   }
+
+  depends_on = ["data.azurerm_resource_group.kvt_rg"]
 }
