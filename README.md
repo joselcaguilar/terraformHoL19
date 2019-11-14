@@ -22,11 +22,50 @@ As an example, we have provisioned a folder with all the configuration files for
 
 You can use them as a template for the following exercises.
 
+In order to try this module, follow these steps:
+1. Login to Azure CLI
+
+    ```azurecli-interactive
+    az login
+    ```
+
+2. Select the Azure Subscription where you want to deploy
+
+    ```azurecli-interactive
+    az account set -s <subscription_id>
+    ```
+3. Verify if it has been selected
+
+    ```azurecli-interactive
+	az account show
+    ```
+4. Itialize the Terraform configuration directory
+
+    ```azurecli-interactive
+	terraform init
+    ```
+5. Validate the code
+
+    ```azurecli-interactive
+	terraform validate
+    ```
+6. Create an execution plan
+    ```azurecli-interactive
+	terraform plan
+    ```
+7. Create the resource group
+    ```azurecli-interactive
+	terraform apply
+    ```
+Once deployed, the Resource Group should have been created in your subscription.
+
+
 ## Exercise 1 - Generate Key Vault
 
 In this exercise, we will create the configuration files needed to generate a **Key Vault**. 
 
 In the repository you will find a folder named [kvt](/modules/kvt) . Inside it, you will find all the files that Terraform needs for deploying a resource. 
+
 
 
 ## Exercise 2 - Generate Log Analyticss workspace
