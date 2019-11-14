@@ -74,6 +74,6 @@ In this exercise, we will create the configuration files needed to generate a **
 
 ## Exercise 3 (BONUS) - Create blueprint
 
-If you have already finished the previous exercises, you are prepared to create your first blueprint, being blueprint a set of modules. 
+If you have already finished the previous exercises, you are prepared to **create your first blueprint**, being blueprint a set of modules. 
 
 The goal of this exercise is to create a blueprint that generates a Resource Group, a Log Analytics Workspace and a Key Vault which sends its logs to the Log Analytics Workspace via diagnostic setting.
