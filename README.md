@@ -68,6 +68,12 @@ In the repository you will find a folder named [kvt](/modules/kvt) . Inside it, 
 
 
 
-## Exercise 2 - Generate Log Analyticss workspace
+## Exercise 2 - Generate Log Analytics workspace
 
 In this exercise, we will create the configuration files needed to generate a **Log Analytics Workspace**. You will need to create all the configuration files from scratch. 
+
+## Exercise 3 (BONUS) - Create blueprint
+
+If you have already finished the previous exercises, you are prepared to create your first blueprint, being blueprint a set of modules. 
+
+The goal of this exercise is to create a blueprint that generates a Resource Group, a Log Analytics Workspace and a Key Vault which sends its logs to the Log Analytics Workspace via diagnostic setting.
