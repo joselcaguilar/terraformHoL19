@@ -66,7 +66,7 @@ In this exercise, we will create the configuration files needed to generate a **
 
 In the repository you will find a folder named [kvt](/modules/kvt) . Inside it, you will find all the files that Terraform needs for deploying a resource. 
 
-
+![alt text](img/kvt.png "Key Vault files")
 
 ## Exercise 2 - Generate Log Analytics workspace
 
