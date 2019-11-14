@@ -1,1 +1,34 @@
-# terraformHoL19
+# Terraform Hands-On Lab 2019
+
+_Create and deploy your first template using Terraform_
+
+## Overview
+
+This lab will guide you through the creation of 3 resources using Terraform configuration files. 
+
+The following diagram depicts the final infrastructure that you will have to deploy:
+
+ ![alt text](img/HoL.png "Infrastructure")
+ 
+> **Requirements**: the following tools are needed
+> + Terraform
+> + Azure CLI
+> + Visual Studio code
+>  + Extension Name: Terraform https://marketplace.visualstudio.com/items?itemName=mauve.terraform
+
+## Exercise 0 - Generate Resource Group
+
+As an example, we have provisioned a folder with all the configuration files for creating a Resource Group: [Resource group](modules/rsg).
+
+You can use them as a template for the following exercises.
+
+## Exercise 1 - Generate Key Vault
+
+In this exercise, we will create the configuration files needed to generate a **Key Vault**. 
+
+In the repository you will find a folder named [kvt](/modules/kvt) . Inside it, you will find all the files that Terraform needs for deploying a resource. 
+
+
+## Exercise 2 - Generate Log Analyticss workspace
+
+In this exercise, we will create the configuration files needed to generate a **Log Analytics Workspace**. You will need to create all the configuration files from scratch. 
