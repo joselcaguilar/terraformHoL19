@@ -68,9 +68,48 @@ In the repository you will find a folder named [kvt](/modules/kvt) . Inside it, 
 
 ![alt text](img/kvt.PNG "Key Vault files")
 
+The key vault should have the following attributes:
+
++ Disk encryption should be enabled.
++ Template deployment should be enabled.
++ (Optional) Access Policy: at least one user should have these permissions:
+  + Secret: get, list, set
+  + Storage: get
++ Two tags: 
+  + environment:  should be inherited from RG.
+  + channel.
+
+Moreover, your module should have the following outputs:
++ Key Vault ID
++ Key Vault name
+
+
+How can you start?
+
+1. _Main.tf_: fill the block _resource_ bearing in mind all the requirements.
+2. _Variables.tf_: define all the variables. Remember that you should have already defined them in Main file.
+3. _Output.tf_: add all the requested outputs. Take a look at RG outputs file.
+4. _versions.tf_: as you are using Terraform 12, you should constrain terraform to a specific version or a range of versions.
+
 ## Exercise 2 - Generate Log Analytics workspace
 
 In this exercise, we will create the configuration files needed to generate a **Log Analytics Workspace**. You will need to create all the configuration files from scratch. 
+
+The Log Analytics should have the following attributes:
+
++ Tags: should be inherited from RG.
++ Location: inherit from RG.
+
+
+Moreover, your module should have the following outputs:
++ Log Analytics ID
++ Log Analytics name
+
+How can you start?
+
+1. Create the file structure.
+2. Follow same steps explained for exercise 2.
+
 
 ## Exercise 3 (BONUS) - Create blueprint
 
